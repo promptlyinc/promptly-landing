@@ -5,5 +5,4 @@ gem 'webrick'
 
 group :jekyll_plugins do
   gem 'jekyll-postcss'
-  gem 'github-pages'
 end
