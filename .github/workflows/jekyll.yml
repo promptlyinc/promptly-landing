@@ -29,21 +29,3 @@ jobs:
         bundle install
         npm install  # If you have any Node.js dependencies
         JEKYLL_ENV=production bundle exec jekyll build
-
-    - name: Temporarily stash site folder
-      run: |
-        mv _site site_stash
-
-    - name: Checkout gh-pages
-      run: |
-        git checkout -b gh-pages || git checkout gh-pages
-        git config --global user.name "GitHub Actions"
-        git config --global user.email "github-actions@github.com"
-        git rm -r || true
-
-    - name: Move site folder and push to gh-pages
-      run: |
-        mv site_stash/* .
-        git add .
-        git commit -m "Auto-build from GitHub Actions"
-        git push -u origin gh-pages --force
