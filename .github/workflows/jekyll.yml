@@ -28,7 +28,7 @@ jobs:
         gem install bundler
         bundle install
         npm install  # If you have any Node.js dependencies
-        bundle exec jekyll build -d site
+        JEKYLL_ENV=production bundle exec jekyll build
 
     - name: Temporarily stash site folder
       run: |
