@@ -32,7 +32,7 @@ jobs:
 
     - name: Temporarily stash site folder
       run: |
-        mv site site_stash
+        mv _site site_stash
 
     - name: Checkout gh-pages
       run: |
