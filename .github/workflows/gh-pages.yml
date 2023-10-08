@@ -13,7 +13,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Setup Ruby
-      uses: actions/setup-ruby@v1
+      uses: ruby/setup-ruby@v1
       with:
         ruby-version: 3.1
         bundler-cache: true
@@ -22,7 +22,7 @@ jobs:
       run: |
         gem install bundler
         bundle install
-        bundle exec JEKYLL_ENV=production jekyll build -d site
+        bundle exec jekyll build -d site
 
     - name: Checkout site-branch
       run: |
