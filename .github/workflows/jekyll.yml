@@ -39,7 +39,7 @@ jobs:
         git checkout -b gh-pages || git checkout gh-pages
         git config --global user.name "GitHub Actions"
         git config --global user.email "github-actions@github.com"
-        if [[ $(git ls-files | wc -l) -ne 0 ]]; then git rm -r *; fi
+        git rm -r || true
 
     - name: Move site folder and push to gh-pages
       run: |
