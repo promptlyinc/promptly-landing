@@ -22,7 +22,7 @@ jobs:
       run: |
         gem install bundler
         bundle install
-        bundle exec jekyll build -d site
+        bundle exec JEKYLL_ENV=production jekyll build -d site
 
     - name: Checkout site-branch
       run: |
