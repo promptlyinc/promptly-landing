@@ -2,6 +2,15 @@ url: "https://www.heyday.so" # the base hostname & protocol for your site, e.g. 
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Heyday" # the name of your site, e.g. ACME Corp.
 
+include:
+  - _pages
+
+collections:
+  pages:
+    permalink: /:title/
+  posts:
+    permalink: /journal/:title/
+
 plugins:
   - jekyll-postcss
 
