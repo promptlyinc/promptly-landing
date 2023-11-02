@@ -2,6 +2,11 @@
 layout: default
 ---
 
-<div class="max-w-prose">
+{% include navigation.html %}
+
+<div class="max-w-prose mx-auto text-formatted pt-12 md:pt-32">
+  <h1>{{ page.title }}</h1>
   {{ content }}
 </div>
+
+{% include footer.html %}

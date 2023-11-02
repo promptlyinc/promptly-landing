@@ -5,6 +5,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  .text-formatted h1 {
+    @apply font-serif text-3xl md:text-4xl text-center mb-10 md:mb-20;
+  }
+
+  .text-formatted h2, .text-formatted h3, .text-formatted h4 {
+    @apply font-serif text-lg mb-3;
+  }
+
+  .text-formatted p {
+    @apply mb-3 md:mb-5;
+  }
+
+  .text-formatted hr {
+    @apply my-3 md:my-5;
+  }
+
+  .text-formatted ul {
+    @apply list-disc list-inside mb-3 md:mb-5;
+  }
+}
+
 @layer utilities {
   @variants responsive {
     .text-balance {
