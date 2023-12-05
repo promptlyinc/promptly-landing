@@ -69,13 +69,14 @@ GEM
 PLATFORMS
   arm64-darwin-20
   arm64-darwin-21
+  arm64-darwin-23
   x86_64-linux
 
 DEPENDENCIES
   jekyll (~> 4.3.2)
   jekyll-compose
   jekyll-postcss
-  kramdown-parser-gfm
+  kramdown-parser-gfm (~> 1.1)
   webrick
 
 BUNDLED WITH
