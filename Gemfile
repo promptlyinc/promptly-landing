@@ -5,6 +5,6 @@ gem 'webrick'
 gem 'kramdown-parser-gfm', '~> 1.1'
 
 group :jekyll_plugins do
-  gem 'jekyll-postcss'
+  gem 'jekyll-postcss-v2'
   gem 'jekyll-compose'
 end

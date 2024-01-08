@@ -17,7 +17,7 @@ collections:
     output: true
 
 plugins:
-  - jekyll-postcss
+  - jekyll-postcss-v2
 
 postcss:
   cache: false
