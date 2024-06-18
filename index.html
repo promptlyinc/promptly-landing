@@ -1,37 +1,55 @@
 ---
 layout: default
-title: Typecheck
+title: Promptly
 ---
 
 {% include navigation.html %}
 
 <!-- Hero -->
-<section class="bg-stone-50 md:rounded-3xl px-5 overflow-hidden">
-  <div class="flex flex-col gap-y-10 items-center text-center md:px-28 pt-20 pb-16 md:pt-32 md:pb-24 mx-auto">
-    <h1 class="text-4xl md:text-6xl font-serif leading-tight md:leading-tight tracking-tight md:max-w-3xl">All-in-one platform for personality assessments.</h1>
-    <p class="text-xl md:text-2xl text-stone-500/90 text-balance max-w-lg">Use our personality assessments to get to know yourself, your teams, and potential hires better.</p>
-    <div class="hidden md:flex items-center gap-x-3">
-      <a href="https://app.typecheck.app" class="btn-primary px-5 md:text-lg">Take our free test</a>
-      <a href="#start" class="btn-subtle md:text-lg">Learn more</a>
+<section class="m-2 rounded-xl bg-cover bg-top bg-cover bg-no-repeat px-5 overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1564951434112-64d74cc2a2d7?q=80&w=4000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+  <div class="container mx-auto">
+    <div class="flex flex-col gap-y-2 items-center text-center md:px-28 pt-20 pb-16 md:pt-40 md:pb-18 mx-auto">
+      <h1 class="text-4xl md:text-6xl font-semibold leading-tight md:leading-tight tracking-tight">Develop prompts with confidence</h1>
+      <p class="text-xl text-balance mb-6">Promptly is a platform for creating, testing, and sharing prompts for LLMs.</p>
+      <div class="hidden md:flex items-center gap-x-3">
+        <a href="#start" class="btn-subtle md:text-lg">Learn more</a>
+        <a href="https://app.typecheck.app" class="btn-primary px-5 md:text-lg">Take our free test</a>
+      </div>
     </div>
-  </div>
-  <div class="flex flex-col items-center -mb-24">
-    <div class="md:w-4/5 rounded-xl shadow-2xl shadow-stone-900/20 ring-1 ring-neutral-700/10 overflow-hidden">
-      <img src="../assets/images/results.png" alt="">
-    </div>
-  </div>
-</section>
-
-<section class="mt-10" id="start">
-  <div class="flex flex-col items-center text-center py-32 max-w-3xl mx-auto">
-    <div class="flex flex-col items-center gap-y-5 px-6 md:px-0">
-      <h2 class="text-4xl md:text-5xl font-serif italic leading-tight md:leading-tight text-balance break-keep mb-5">"Until you make the unconscious conscious, it will direct your life and you will call it fate."</h2>
-      <p class="text-lg md:text-xl text-stone-500/90">Carl Jung</p>
+    <div class="flex flex-col items-center -mb-24">
+      <div class="md:w-4/5 rounded-xl shadow-2xl shadow-stone-900/20 ring-1 ring-neutral-700/10 p-3 border border-white/40 bg-gradient-to-r from-yellow-200/5 to-yellow-100/10 backdrop-blur-sm backdrop-brightness-105 overflow-hidden">
+        <img src="../assets/images/promptly-screen.png" alt="" class="rounded-md border border-black/5">
+      </div>
     </div>
   </div>
 </section>
 
-<section class="mt-10">
+<section class="mt-10 container mx-auto" id="start">
+  <div class="flex flex-col items-center text-center py-20 ">
+    <div class="flex flex-col items-center gap-y-10 px-6 md:px-0">
+      <h2 class="text-xl font-medium">Supports <i>all</i> major LLMs</h2>
+      <div class="flex items-center space-x-14 flex-1 overflow-x-scroll">
+        <div>
+          <img src="{{ '../assets/images/OpenAI_Logo.svg' | relative_url }}" alt="OpenAI" class="h-10 grayscale opacity-70">
+        </div>
+        <div>
+          <img src="{{ '../assets/images/OpenAI_Logo.svg' | relative_url }}" alt="OpenAI" class="h-10 grayscale opacity-70">
+        </div>
+        <div>
+          <img src="{{ '../assets/images/OpenAI_Logo.svg' | relative_url }}" alt="OpenAI" class="h-10 grayscale opacity-70">
+        </div>
+        <div>
+          <img src="{{ '../assets/images/OpenAI_Logo.svg' | relative_url }}" alt="OpenAI" class="h-10 grayscale opacity-70">
+        </div>
+        <div>
+          <img src="{{ '../assets/images/OpenAI_Logo.svg' | relative_url }}" alt="OpenAI" class="h-10 grayscale opacity-70">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mt-10 container mx-auto">
   <div class="flex flex-col md:flex-row gap-y-3 md:gap-x-6 px-3 md:px-0 md:items-stretch">
     <div class="md:w-1/3 border border-gray-200 rounded-xl px-4 py-6 md:px-8 md:py-8 flex flex-col gap-y-6">
       <div class="w-12 h-12 rounded-xl bg-harp-300 grid place-items-center">
@@ -123,10 +141,10 @@ title: Typecheck
 <section class="mt-10 pb-10">
   <div class="flex flex-col items-center gap-y-5 text-center py-40 max-w-2xl mx-auto">
     <h2 class="text-4xl md:text-6xl font-serif leading-tight md:leading-tight">Get started for free</h2>
-    <p class="text-xl md:text-2xl text-neutral-500/90 max-w-lg px-6 md:px-0">Understand yourself, your teams, and potential hires better with our personality assessments.</p>
+    <p class="text-xl md:text-2xl text-neutral-500/90 max-w-lg px-6 md:px-0">Promptly is a platform for creating, testing, and sharing prompts for LLMs.</p>
     <div class="flex items-center gap-x-5 mt-6">
-      <a href="https://app.typecheck.app" class="btn-primary md:text-lg md:px-5">Take our free test</a>
-      <a href="mailto:hello@typecheck.app" class="btn-subtle md:text-lg md:px-5">Contact us</a>
+      <a href="https://app.promptly.so" class="btn-primary md:text-lg md:px-5">Get started</a>
+      <a href="mailto:hello@promptly.so" class="btn-subtle md:text-lg md:px-5">Contact us</a>
     </div>
   </div>
 </section>

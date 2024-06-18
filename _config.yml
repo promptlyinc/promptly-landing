@@ -1,6 +1,6 @@
-url: "https://www.typecheck.app" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.promptly.so" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "Typecheck" # the name of your site, e.g. ACME Corp.
+title: "Promptly" # the name of your site, e.g. ACME Corp.
 
 permalink: ':collection/:slug'
 
@@ -12,7 +12,7 @@ collections:
   pages:
     permalink: /:slug/
   posts:
-    permalink: /journal/:slug/
+    permalink: /blog/:slug/
   legal:
     output: true
 
