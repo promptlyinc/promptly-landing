@@ -1,6 +1,7 @@
 url: "https://www.promptly.so" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Promptly" # the name of your site, e.g. ACME Corp.
+app_url: "https://app.promptly.so" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: ':collection/:slug'
 
